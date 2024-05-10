@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my fitness</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&family=Salsa&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Salsa&display=swap" rel="stylesheet">
+<!-- <link rel="stylesheet" href="css/style.css"> -->
+<style>
+    body{
+        font-family: 'Roboto Condensed', sans-serif;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background-image:url(img/img2.jpg);
+        background-size: contain;
+        height: 5000px;
+    }
+    .left{
+         display: inline-block;
+         position: absolute;
+         left: 20px;
+         top: 12px;
+         /* border: 2px soild yellow;  */
+     }
+     .left img{
+          width: 70px;
+          filter: invert(100%);
+          border-radius: 50px;
+          align-items: center;
+     }
+     .left div{
+        font-family: 'Salsa', cursive;
+         text-align: center;
+         line-height: 19px ;
+         font-size: 19px;
+     }
+     .right{
+        position: absolute;
+        right: 34px;
+        top: 35px;
+        display: inline-block;
+      
+       /* border: 2px soild red; */
+     }   
+     .btn 
+     {
+        margin: 0px 11px;
+        font-size: 11px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid green;
+        border-radius: 9px;
+        cursor: pointer;
+        font-family: 'Roboto Condensed', sans-serif;
+     }  
+     .btn:hover{
+        background-color: rgb(85, 95, 89) ;
+     }
+     .center{
+        /* border: 2px soild green; */
+        /* border-color: aquamarine; */
+        /* box-sizing: border-box; */
+        display: block ;
+        width: 50%;
+        margin: 40px auto;
+        border: white;
+     }
+     .navbar{
+        display: block;
+     }
+     .navbar li{
+         display: inline-block;
+         font-size: 20px;
+     }
+     .navbar li a{
+         color: white;
+         text-decoration: none;
+         padding: 34px 23px;
+     }
+     .navbar li a:hover , .navbar li a:active{
+        text-decoration: underline;
+        color: grey;
+     }
+     .container{
+        border: 2px solid bisque;
+        margin: 119px 500px;
+        padding: 52px 25px;
+        width: 30%;
+        border-radius: 17px;
+        ;
+
+     }
+     .formgrp input{
+        font-family: 'Roboto Condensed', sans-serif;
+            font-size: 15px;
+            margin: 5px auto;
+            padding: 1px;
+            text-align: center;
+            display: block;
+            width: 150px;
+            border: 2px solid ;
+            border-radius:5px ;
+     }
+     .container h1{
+        text-align: center;
+     }
+     .container button{
+        display: block;
+        width: 25%;
+        margin :auto;
+     }
+</style>
+
+<body>
+    <header class="head">
+        <div class="left">
+          <img src="img/logo.png" alt="">
+          <div>My fitness</div>
+        </div>
+        <div class="right">
+            <button class="btn">
+                Call Us
+            </button>
+            <button class="btn">
+                Email us 
+            </button>
+        </div>
+        <div class="center">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness calculator</a></li>
+                <li><a href="#"> Contact us</a></li>
+             </ul>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join our gym</h1>
+        <form action="noaction.php">
+            <div class="formgrp"><input type="text" name="" placeholder="Enter your name"></div>
+        </form>
+        <form action="noaction.php">
+            <div class="formgrp"><input type="text" name="" placeholder="Enter phone no."></div>
+        </form>
+        <form action="noaction.php">
+            <div class="formgrp"><input type="text" name="" placeholder="Enter your Age"></div>
+        </form>
+        <form action="noaction.php">
+            <div class="formgrp"><input type="text" name="" placeholder="Enter your Gender"></div>
+            <button class="btn">submit</button>
+        </form>
+    </div>
+</body>
+</html>
